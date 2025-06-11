@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo-RevoU.png" alt="Logo"> </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="message.html">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1>Hi Reza, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </section>
+
+        <section class="placeholder-content">
+            <div class="image-placeholder">
+                <img src="img/watercolor-background.png alt="placeholder-content"
+            </div>
+        </section>
+
+        <section class="headquarter-section">
+            <h2>Our Headquarter</h2>
+            <div class="circles-container">
+                <div class="circle">
+                    <p>Jakarta</p>
+                </div>
+                <div class="circle">
+                    <p>Bandung</p>
+                </div>
+                <div class="circle">
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-us-section">
+            <h2>Message Us</h2>
+            <div class="message-us-content">
+                <form class="message-form">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" value="Nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Tanggal Lahir</label>
+                        <input type="date" id="dob" name="dob" value="2023-04-02">
+                        <span class="calendar-icon">📅</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="laki-laki" name="gender" value="Laki-Laki" checked>
+                            <label for="laki-laki">Laki-Laki</label>
+                            <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="message-display">
+                    <h3>Current time: <span id="current-time">Fri Jun 17 2022 11:27:28 GMT+0730</span></h3>
+                    <p><strong>Nama:</strong> Reza Fathan D</p>
+                    <p><strong>Tanggal Lahir:</strong> 02/04/1995</p>
+                    <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+                    <p><strong>Pesan:</strong> Lagi belajar buat Website</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By Revo-U</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

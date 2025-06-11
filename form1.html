@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Belajar - CRUD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo-RevoU.png" alt="Logo"> </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="message.html">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-belajar-section">
+            <h1>Form Belajar</h1>
+            <p>Ini adalah website latihan pertama</p>
+
+            <div class="crud-container">
+                <form class="crud-form">
+                    <div class="form-group">
+                        <label for="crud-name">Nama</label>
+                        <input type="text" id="crud-name" name="name" placeholder=": Nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="crud-dob">Tanggal Lahir</label>
+                        <input type="date" id="crud-dob" name="dob" value="2023-04-02">
+                        <span class="calendar-icon">📅</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="crud-laki-laki" name="crud-gender" value="Laki-Laki" checked>
+                            <label for="crud-laki-laki">Laki-Laki</label>
+                            <input type="radio" id="crud-perempuan" name="crud-gender" value="Perempuan">
+                            <label for="crud-perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="crud-message">Pesan</label>
+                        <textarea id="crud-message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="data-table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Pesan</th>
+                                <th>Profile</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By Revo-U</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
